@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="GoBtn">Start</string>
+
+
+    <string name="app_name">냥바디</string>
+    <string name="main_measure_body_comment">몸둘레와 다리길이를 측정 해 주세요</string>
+    <string name="body_measure">몸 둘레</string>
+    <string name="leg_measure">다리 길이</string>
+    <string name="centimeter">Cm</string>
+    <string name="calculation">계산하기</string>
+
+    <string name="formulaText">계산식</string>
+    <string name="formula">Feline Body Mass Index (FBMI)\n\n체지방율(%) = ((((몸둘레) / 0.7062) - 다리길이) / 0.9156) - 다리길이) </string>
+    <string name="closeBtn">닫기</string>
+
+    <string name="bodyMeasureTooltipText">9번째 갈비뼈를 기준으로 몸둘레를 측정해야 정확하지만, 고양이가 서 있을 때 몸에서 가장 두꺼운 부분을 측정하셔도 괜찮습니다.</string>
+    <string name="legMeasureTooltipText">무릎부터 뒷발목까지의 정강이뼈 길이를 측정해야 정확합니다. 고양이가 앉을 때 땅에 닿는 부분이 아닙니다. 만약 고양이가 자꾸 움직여서 측정하기 어려울 경우 옆으로 누워 있거나 잠잘 때 측정하면 편합니다. </string>
+
+
+    <string name="splash_title">냥바디 (Cat BMI)</string>
+    
+    <string name="yourCatIs">당신의 고양이는</string>
+
+    <string name="FBMI">체지방률 :</string>
+    <string name="FBMIPercent">%</string>
+
+    <string name="SeverelyUnderweight">심각한 저체중</string>
+    <string name="Underweight">저체중</string>
+    <string name="TooThin">마른 상태</string>
+    <string name="Ideal">정상 체중</string>
+    <string name="AboveIdeal">통통한 상태</string>
+    <string name="Overweight">과체중</string>
+    <string name="Obese">비만</string>
+    <string name="SeverelyObese">심각한 비만</string>
+
+    <string name="Is">입니다.</string>
+
+
+    <string name="status">상태</string>
+
+    <string name="tv1_status_text">단모종일 경우 갈비뼈가 뚜렷이 드러납니다.만져지는 지방층이 없습니다.옆에서 봤을 때 복부가 매우 홀쭉합니다.척추와 골반 뼈가 쉽게 만져집니다.</string>
+    <string name="tv2_status_text">단모종일 경우 갈비뼈가 드러나 보입니다.만져지는 지방층이 없습니다.옆에서 봤을 때 복부가 매우 홀쭉합니다.최소한의 근육과 함께 척추가 쉽게 만져집니다.</string>
+    <string name="tv3_status_text">최소한의 지방만 덮인 채로 갈비뼈가 손으로 쉽게 잘 만져집니다.척추뼈가 보이고 위에서 봤을 때 허리가 뚜렷이 잘록해 보입니다.최소한의 복부지방이 있습니다.</string>
+    <string name="tv4_status_text">최소한의 지방만 덮인 채로 갈비뼈가 만져집니다.위에서 봤을 때 허리가 잘록해 보입니다.옆에서 봤을 때 복부가 약간 홀쭉합니다.최소한의 복부지방이 있으나 복부지방층은 형성되어 있지 않습니다.</string>
+    <string name="tv5_status_text">균형이 잘 잡힌 이상적인 체중입니다.위에서 봤을 때 허리가 약간 잘록해 보입니다.약간의 지방층과 함께 갈비뼈가 만져집니다.복부지방층이 약간 형성되어 있습니다.</string>
+    <string name="tv6_status_text">약간 과도한 지방과 함께 갈비뼈가 만져질 수 있습니다.허리와 복부가 구분되기는 하나 뚜렷하지는 않습니다.옆에서 봤을 때 복부 굴곡이 없습니다.</string>
+    <string name="tv7_status_text">두터운 지방과 함께 갈비뼈가 잘 만져지지 않습니다.위에서 봤을 때 허리 윤곽이 거의 드러나지 않습니다.옆에서 봤을 때 복부가 둥글게 나와있고 복부지방층이 형성되어 있습니다.</string>
+    <string name="tv8_status_text">갈비뼈는 두터운 지방층에 덮여 만져지지 않습니다.위에서 봤을 때 허리윤곽이 드러나지 않습니다.옆에서 봤을 때 복부가 뚜렷이 둥글게 나와있고 복부지방층이 두텁습니다.척추 뼈 위로 지방층이 있습니다.</string>
+    <string name="tv9_status_text">갈비뼈에 매우 육중한 지방층이 형성되어 만져지지 않습니다.허리윤곽이 없고 복부지방층이 매우 두터워 복부가 팽만되어 보입니다.척추 뼈, 얼굴, 다리에 지방층이 형성되어 있습니다.</string>
+
+    <string name="Diagnosis">진단</string>
+
+    <string name="tv1_diag_text">대사 질환, 치아 건강 문제 또는 식욕감퇴와 같이 고양이의 체중 감소를 유발 할 수 있는 여러 가지 이유가 있습니다. 계속해서 체중 감소가 되고 있는 것은 현재 어떤 질병에 걸려 있을 가능성도 있기 때문에 수의사와 상담해 주세요.</string>
+    <string name="tv2_diag_text">대사 질환, 치아 건강 문제 또는 식욕감퇴와 같이 고양이의 체중 감소를 유발 할 수 있는 여러 가지 이유가 있습니다. 계속해서 체중 감소가 되고 있는 것은 현재 어떤 질병에 걸려 있을 가능성도 있기 때문에 수의사와 상담해 주세요.</string>
+    <string name="tv3_diag_text">대사 질환, 치아 건강 문제 또는 식욕감퇴와 같이 고양이의 체중 감소를 유발 할 수 있는 여러 가지 이유가 있습니다. 계속해서 체중 감소가 되고 있는 것은 현재 어떤 질병에 걸려 있을 가능성도 있기 때문에 수의사와 상담해 주세요.</string>
+    <string name="tv4_diag_text">고양이가 현재 건강한 체중 상태 입니다. 고양이의 체중을 안정적으로 유지하기 위해 규칙적인 운동과 좋은 식사 습관을 계속 유지 해 주세요.</string>
+    <string name="tv5_diag_text">고양이가 현재 건강한 체중 상태 입니다. 고양이의 체중을 안정적으로 유지하기 위해 규칙적인 운동과 좋은 식사 습관을 계속 유지 해 주세요.</string>
+    <string name="tv6_diag_text">고양이가 약간 통통한 상태입니다. 체중이 계속 증가한다면 과체중이 되어 관절염, 심장병, 당뇨등의 질환이 발생할 수 있으므로 지금부터 관리하는 것이 중요합니다.</string>
+    <string name="tv7_diag_text">고양이가 현재 과체중인 상태입니다. 사람과 마찬가지로 비만은 여러가지 질병의 원인이 될 수 있기 때문에 체중조절이 필요합니다. 하지만 급격하게 살을 빼기 위해 음식 섭취를 제대로 하지 못하면 지방간이 발생할 수 있습니다. 지방간은 길고양이들이나 유기묘들에게 많이 발생되는 질병인 만큼 위험하기 때문에 무조건 굶어서 다이어트를 하지 말고 수의사와 상담해 주세요.</string>
+    <string name="tv8_diag_text">고양이가 현재 비만인 상태입니다. 고양이가 비만일 경우 다리 관절이 몸무게를 견디지 못해 퇴행성 관절염이 발생할 수 있고, 당뇨병, 췌장염, 호흡기 질환 등을 야기할 수 있습니다. 에너지 불균형이 발생하면 갑상선기능저하증, 부신피질기능항진증, 당뇨병 등 심각한 질환이 발생할 가능성도 높아집니다. 하지만 급격하게 살을 빼기 위해 음식 섭취를 제대로 하지 못하면 지방간이 발생할 수 있습니다. 지방간은 길고양이들이나 유기묘들에게 많이 발생되는 질병인 만큼 위험하기 때문에 무조건 굶어서 다이어트를 하지 말고 가능한 빨리 수의사와 상담하고 고양이를 검사하여 식이조절 및 적절한 체중 감량 프로그램 실행하는 것이 좋습니다.</string>
+    <string name="tv9_diag_text">고양이가 현재 심각한 비만인 상태입니다. 고양이가 비만일 경우 다리 관절이 몸무게를 견디지 못해 퇴행성 관절염이 발생할 수 있고, 당뇨병, 췌장염, 호흡기 질환 등을 야기할 수 있습니다. 에너지 불균형이 발생하면 갑상선기능저하증, 부신피질기능항진증, 당뇨병 등 심각한 질환이 발생할 가능성도 높아집니다. 하지만 급격하게 살을 빼기 위해 음식 섭취를 제대로 하지 못하면 지방간이 발생할 수 있습니다. 지방간은 길고양이들이나 유기묘들에게 많이 발생되는 질병인 만큼 위험하기 때문에 무조건 굶어서 다이어트를 하지 말고 가능한 빨리 수의사와 상담하고 고양이를 검사하여 식이조절 및 적절한 체중 감량 프로그램 실행하는 것이 좋습니다.</string>
+    
+</resources>

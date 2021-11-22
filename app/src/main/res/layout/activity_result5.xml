@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4D4CAF50"
+    tools:context=".ResultActivity5">
+
+    <TextView
+        android:id="@+id/tv5_top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/yourCatIs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv5_fbmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/FBMI"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5_top1" />
+
+    <TextView
+        android:id="@+id/tv5_percent_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="20.9"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5_fbmi"
+        app:layout_constraintStart_toEndOf="@+id/tv5_fbmi"
+        app:layout_constraintTop_toBottomOf="@+id/tv5_top1" />
+
+    <TextView
+        android:id="@+id/tv5_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/FBMIPercent"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv5_fbmi"
+        app:layout_constraintStart_toEndOf="@+id/tv5_percent_result"
+        app:layout_constraintTop_toBottomOf="@+id/tv5_top1"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+    <TextView
+        android:id="@+id/tv5_top2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Ideal"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5_fbmi" />
+
+    <TextView
+        android:id="@+id/tv5_top3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/Is"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5_top2" />
+
+    <View
+        android:id="@+id/viewLine5"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="20dp"
+        android:background="#9F5E5D5D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5_top3" />
+
+    <ImageView
+        android:id="@+id/rainbow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewLine5"
+        app:srcCompat="@drawable/r5" />
+
+    <TextView
+        android:id="@+id/tv5_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/status"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rainbow5" />
+
+    <TextView
+        android:id="@+id/tv5_status_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="@font/goyang"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/tv5_status_text"
+        android:textSize="16sp"
+        android:scrollbars="vertical"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv5_status" />
+
+    <TextView
+        android:id="@+id/tv5_diag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/Diagnosis"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv5_diag_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv5_diag_text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/goyang"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarFadeDuration="0"
+        android:scrollbars="vertical"
+        android:text="@string/tv5_diag_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7579247174586304/2523768206"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

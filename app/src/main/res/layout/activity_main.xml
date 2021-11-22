@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCECF3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvMainTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/goyang"
+        android:text="@string/main_measure_body_comment"
+        android:textColor="#B3000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/catBoneImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/catboneimg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/tvMainBodyMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/goyang"
+        android:text="@string/body_measure"
+        android:textColor="#B3000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvMainLegMeasure"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catBoneImg" />
+
+    <TextView
+        android:id="@+id/tvMainBodyCm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/goyang"
+        android:text="@string/centimeter"
+        android:textColor="#B3000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etBodyMeasure"
+        app:layout_constraintStart_toEndOf="@+id/etBodyMeasure" />
+
+    <TextView
+        android:id="@+id/tvMainLegCm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/goyang"
+        android:text="@string/centimeter"
+        android:textColor="#B3000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/etLegMeasure"
+        app:layout_constraintStart_toEndOf="@+id/etLegMeasure" />
+
+    <TextView
+        android:id="@+id/tvMainLegMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/goyang"
+        android:text="@string/leg_measure"
+        android:textColor="#B3000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvMainBodyMeasure"
+        app:layout_constraintTop_toBottomOf="@+id/catBoneImg" />
+
+    <EditText
+        android:id="@+id/etBodyMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintStart_toStartOf="@+id/tvMainBodyMeasure"
+        app:layout_constraintTop_toBottomOf="@+id/tvMainBodyMeasure"/>
+
+    <EditText
+        android:id="@+id/etLegMeasure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintStart_toStartOf="@+id/tvMainLegMeasure"
+        app:layout_constraintTop_toBottomOf="@+id/tvMainLegMeasure"/>
+
+    <Button
+        android:id="@+id/calcBtn"
+        android:layout_width="147dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/calculation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/bodyMeasureHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tooltipText="@string/bodyMeasureTooltipText"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMainBodyMeasure"
+        app:layout_constraintStart_toEndOf="@+id/tvMainBodyMeasure"
+        app:srcCompat="@drawable/ic_baseline_help_24"/>
+
+    <ImageView
+        android:id="@+id/legMeasureHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tooltipText="@string/legMeasureTooltipText"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMainLegMeasure"
+        app:layout_constraintStart_toEndOf="@+id/tvMainLegMeasure"
+        app:srcCompat="@drawable/ic_baseline_help_24"/>
+
+    <ImageView
+        android:id="@+id/formulaHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/calcBtn"
+        app:layout_constraintStart_toEndOf="@+id/calcBtn"
+        app:layout_constraintTop_toTopOf="@+id/calcBtn"
+        app:srcCompat="@drawable/ic_baseline_help_24" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7579247174586304/2523768206"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
