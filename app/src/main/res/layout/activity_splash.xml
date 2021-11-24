@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCECF3"
+    android:background="@color/Surface"
     tools:context=".SplashActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_marginTop="32dp"
         android:fontFamily="@font/singleday"
         android:text="@string/splash_title"
-        android:textColor="#CC000000"
+        android:textColor="@color/OnSurface"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,6 +28,7 @@
         android:layout_marginBottom="50dp"
         android:text="@string/GoBtn"
         android:textSize="34sp"
+        android:textColor="@color/Surface"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

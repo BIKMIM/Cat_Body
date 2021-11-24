@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCECF3"
+    android:background="@color/Background"
     tools:context=".MainActivity">
 
     <TextView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/goyang"
         android:text="@string/main_measure_body_comment"
-        android:textColor="#B3000000"
+        android:textColor="@color/OnSurface"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,12 +21,12 @@
 
     <ImageView
         android:id="@+id/catBoneImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:src="@drawable/catboneimg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <TextView
@@ -36,7 +36,7 @@
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/goyang"
         android:text="@string/body_measure"
-        android:textColor="#B3000000"
+        android:textColor="@color/OnSurface"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/tvMainLegMeasure"
         app:layout_constraintHorizontal_bias="0.5"
@@ -49,7 +49,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/goyang"
         android:text="@string/centimeter"
-        android:textColor="#B3000000"
+        android:textColor="@color/OnSurface"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/etBodyMeasure"
         app:layout_constraintStart_toEndOf="@+id/etBodyMeasure" />
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/goyang"
         android:text="@string/centimeter"
-        android:textColor="#B3000000"
+        android:textColor="@color/OnSurface"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/etLegMeasure"
         app:layout_constraintStart_toEndOf="@+id/etLegMeasure" />
@@ -73,7 +73,7 @@
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/goyang"
         android:text="@string/leg_measure"
-        android:textColor="#B3000000"
+        android:textColor="@color/OnSurface"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -89,7 +89,7 @@
         android:minHeight="48dp"
         android:selectAllOnFocus="true"
         app:layout_constraintStart_toStartOf="@+id/tvMainBodyMeasure"
-        app:layout_constraintTop_toBottomOf="@+id/tvMainBodyMeasure"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvMainBodyMeasure" />
 
     <EditText
         android:id="@+id/etLegMeasure"
@@ -100,7 +100,7 @@
         android:minHeight="48dp"
         android:selectAllOnFocus="true"
         app:layout_constraintStart_toStartOf="@+id/tvMainLegMeasure"
-        app:layout_constraintTop_toBottomOf="@+id/tvMainLegMeasure"/>
+        app:layout_constraintTop_toBottomOf="@+id/tvMainLegMeasure" />
 
     <Button
         android:id="@+id/calcBtn"
@@ -119,7 +119,7 @@
         android:tooltipText="@string/bodyMeasureTooltipText"
         app:layout_constraintBottom_toBottomOf="@+id/tvMainBodyMeasure"
         app:layout_constraintStart_toEndOf="@+id/tvMainBodyMeasure"
-        app:srcCompat="@drawable/ic_baseline_help_24"/>
+        app:srcCompat="@drawable/ic_baseline_help_24" />
 
     <ImageView
         android:id="@+id/legMeasureHelp"
@@ -128,7 +128,7 @@
         android:tooltipText="@string/legMeasureTooltipText"
         app:layout_constraintBottom_toBottomOf="@+id/tvMainLegMeasure"
         app:layout_constraintStart_toEndOf="@+id/tvMainLegMeasure"
-        app:srcCompat="@drawable/ic_baseline_help_24"/>
+        app:srcCompat="@drawable/ic_baseline_help_24" />
 
     <ImageView
         android:id="@+id/formulaHelp"
@@ -150,6 +150,6 @@
         app:adUnitId="ca-app-pub-7579247174586304/2523768206"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

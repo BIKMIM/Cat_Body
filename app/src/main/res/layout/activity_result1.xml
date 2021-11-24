@@ -22,36 +22,45 @@
 
     <TextView
         android:id="@+id/tv1_fbmi"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="120dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/FBMI"
+        android:textAlignment="viewEnd"
         android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv1_percent_result"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv1_top1" />
 
     <TextView
         android:id="@+id/tv1_percent_result"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="20.9"
+        android:text="00.00"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv1_fbmi"
+        app:layout_constraintEnd_toStartOf="@+id/tv1_percent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/tv1_fbmi"
         app:layout_constraintTop_toBottomOf="@+id/tv1_top1" />
 
     <TextView
         android:id="@+id/tv1_percent"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/FBMIPercent"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/tv1_fbmi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toEndOf="@+id/tv1_percent_result"
         app:layout_constraintTop_toBottomOf="@+id/tv1_top1"
         app:layout_constraintVertical_bias="1.0" />
@@ -95,7 +104,6 @@
         android:id="@+id/rainbow1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +114,6 @@
         android:id="@+id/tv1_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/status"
         android:textSize="20sp"
@@ -118,7 +125,7 @@
     <TextView
         android:id="@+id/tv1_status_text"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
         android:fontFamily="@font/goyang"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -136,19 +143,19 @@
         android:id="@+id/tv1_diag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/Diagnosis"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv1_diag_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1_status_text" />
 
     <TextView
         android:id="@+id/tv1_diag_text"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginBottom="120dp"
         android:fontFamily="@font/goyang"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -157,10 +164,10 @@
         android:scrollbars="vertical"
         android:text="@string/tv1_diag_text"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1_diag" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -172,7 +179,7 @@
         app:adUnitId="ca-app-pub-7579247174586304/2523768206"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
