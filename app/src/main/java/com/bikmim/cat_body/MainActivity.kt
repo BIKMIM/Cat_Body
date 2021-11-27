@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
 
                 // 소숫점 2자리만 표시
                 bmiFormat2f = String.format("%.2f", bmiResult)
-                Toast.makeText(this, "결과는 $bmiFormat2f 입니다.", Toast.LENGTH_SHORT).show()
+              //  Toast.makeText(this, "결과는 $bmiFormat2f 입니다.", Toast.LENGTH_SHORT).show()
 
                 // bmiResult에 따라서 Activity 이동
                 when (bmiResult) {
@@ -121,7 +121,7 @@ class MainActivity : AppCompatActivity() {
                     in 66.6864441874..1000.0 -> moveResultActivity9() // 심각한 비만
                 }
             }catch (e: Exception){
-                Toast.makeText(this, "값을 입력 해 주세요", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.fillBlank, Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -136,7 +136,7 @@ class MainActivity : AppCompatActivity() {
             val mDialogView = LayoutInflater.from(this).inflate(R.layout.bodypopup, null)
             val mBuilder = AlertDialog.Builder(this)
                 .setView(mDialogView)
-                .setTitle("몸둘레 측정")
+                .setTitle(R.string.body_measure_text)
             mBuilder.show()
             }
 
@@ -146,7 +146,7 @@ class MainActivity : AppCompatActivity() {
             val mDialogView = LayoutInflater.from(this).inflate(R.layout.legpopup, null)
             val mBuilder = AlertDialog.Builder(this)
                 .setView(mDialogView)
-                .setTitle("다리길이 측정")
+                .setTitle(R.string.leg_measure_text)
             mBuilder.show()
         }
 
@@ -156,7 +156,7 @@ class MainActivity : AppCompatActivity() {
             val mDialogView = LayoutInflater.from(this).inflate(R.layout.formulapopup, null)
             val mBuilder = AlertDialog.Builder(this)
                 .setView(mDialogView)
-                .setTitle("계산 방법")
+                .setTitle(R.string.formulaText)
             mBuilder.show()
         }
     }

@@ -25,15 +25,15 @@ class SplashActivity : AppCompatActivity() {
             val mDialogView = LayoutInflater.from(this).inflate(R.layout.readme, null)
             val mBuilder = AlertDialog.Builder(this)
                 .setView(mDialogView)
-                .setTitle("주의 사항")
+                .setTitle(R.string.warning)
             val intent = Intent(this, MainActivity::class.java)
 
             mBuilder.apply {
-                setPositiveButton("예",
+                setPositiveButton(R.string.readmeYes,
                     DialogInterface.OnClickListener { dialog, id ->
                         startActivity(intent)
                     })
-                setNegativeButton("아니오",
+                setNegativeButton(R.string.readmeNo,
                     DialogInterface.OnClickListener { dialog, id ->
                         // User cancelled the dialog
                     })

@@ -10,8 +10,15 @@ android {
         applicationId "com.bikmim.cat_body"
         minSdk 26
         targetSdk 31
-        versionCode 3
+        versionCode 6
         versionName "1.0"
+
+        // v0.1 첫 제작
+        // v0.2 다크모드 글씨 색상 수정
+        // v0.3 글씨 겹침 등 수정 후 플레이 스토어 출시
+        // v0.4 다국어 지원 (영어) 추가
+        // v0.5 다국어 지원 (영어) 오류 수정
+        // v0.6 다국어 지원용 썸네일 수정, 업데이트 코멘트 수정
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
