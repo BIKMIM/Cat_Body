@@ -12,13 +12,11 @@
         android:id="@+id/tv8_top1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/yourCatIs"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline47" />
 
     <TextView
         android:id="@+id/tv8_fbmi"
@@ -66,12 +64,10 @@
         app:layout_constraintVertical_bias="1.0" />
 
 
-
     <TextView
         android:id="@+id/tv8_top2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/Obese"
         android:textSize="28sp"
@@ -95,7 +91,6 @@
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="8dp"
         android:layout_marginRight="20dp"
         android:background="#9F5E5D5D"
         app:layout_constraintEnd_toEndOf="parent"
@@ -106,6 +101,7 @@
         android:id="@+id/rainbow8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/guideline48"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewLine8"
@@ -119,15 +115,16 @@
         android:fontFamily="@font/poppins_bold"
         android:text="@string/status"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv8_status_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rainbow8" />
+        app:layout_constraintTop_toTopOf="@+id/guideline48" />
 
     <TextView
         android:id="@+id/tv8_status_text"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/goyang"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -136,6 +133,7 @@
         android:scrollbars="vertical"
         android:text="@string/tv8_status_text"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline49"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -145,19 +143,19 @@
         android:id="@+id/tv8_diag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/Diagnosis"
         android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv8_diag_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv8_status_text" />
+        app:layout_constraintTop_toTopOf="@+id/guideline49" />
 
     <TextView
         android:id="@+id/tv8_diag_text"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="0dp"
         android:fontFamily="@font/goyang"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
@@ -166,10 +164,11 @@
         android:scrollbars="vertical"
         android:text="@string/tv8_diag_text"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline51"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv8_diag" />
+        app:layout_constraintTop_toTopOf="@+id/guideline50" />
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
@@ -182,6 +181,41 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline47"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
